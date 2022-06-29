@@ -9,7 +9,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose/pose.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js" crossorigin="anonymous"></script>
 
-  <script src="/static/js/from_example/js/libs/ammo.js"></script>
+  <script src="./static/js/from_example/js/libs/ammo.js"></script>
 
 </head>
 
@@ -99,18 +99,18 @@
 
     // -------------------- ここからThree.js --------------------
 
-    import * as THREE from '/static/js/build/three.module.js';
+    import * as THREE from './static/js/build/three.module.js';
 
-    import Stats from '/static/js/from_example/jsm/libs/stats.module.js';
-    import { GUI } from '/static/js/from_example/jsm/libs/dat.gui.module.js';
+    import Stats from './static/js/from_example/jsm/libs/stats.module.js';
+    import { GUI } from './static/js/from_example/jsm/libs/dat.gui.module.js';
 
-    import { OrbitControls } from '/static/js/from_example/jsm/controls/OrbitControls.js';
-    import { OutlineEffect } from '/static/js/from_example/jsm/effects/OutlineEffect.js';
-    import { MMDLoader } from '/static/js/from_example/jsm/loaders/MMDLoader.js';
-    import { MMDAnimationHelper } from '/static/js/from_example/jsm/animation/MMDAnimationHelper.js';
+    import { OrbitControls } from './static/js/from_example/jsm/controls/OrbitControls.js';
+    import { OutlineEffect } from './static/js/from_example/jsm/effects/OutlineEffect.js';
+    import { MMDLoader } from './static/js/from_example/jsm/loaders/MMDLoader.js';
+    import { MMDAnimationHelper } from './static/js/from_example/jsm/animation/MMDAnimationHelper.js';
 
-    var modelFile = '/static/models/default/default.pmd';
-    var vmdFiles = '/static/motions/default.vmd';
+    var modelFile = './static/models/default/default.pmd';
+    var vmdFiles = './static/motions/default.vmd';
 
     var mesh, threejs_camera, scene, renderer, effect;
     var helper, ikHelper, physicsHelper;
