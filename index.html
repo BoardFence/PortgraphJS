@@ -331,8 +331,10 @@
         //threejs_camera.position = positionLeftEye;
 
         //threejs_camera.position.z += 1
-        // threejs_camera.position.x = positionLeftEye['x'] * 100
+        threejs_camera.position.x = positionLeftEye['x'] * 100 -50
         threejs_camera.position.y = positionLeftEye['y'] * 100 - 50
+
+        threejs_camera.lookAt(new THREE.Vector3(0, 0, 0));
 
         effect.render(scene, threejs_camera);
 
